@@ -11,9 +11,15 @@ export const STEP_3_GRAPHIC = "";
 export const ACTION_BUTTON_LABEL = "Explore";
 export const OUR_PROCESS_SECTION_TITLE = "Our Process";
 
+export interface StepData {
+  label: string,
+  image:any
+}
 export interface Step {
+  step: string;
   label: string;
   image: string; // Or component?
+  data: StepData[]
 }
 
 export interface OurProcessProps {

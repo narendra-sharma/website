@@ -29,11 +29,12 @@ const HeaderContainer = styled.div`
 const NavContainer = styled.nav`
   display: flex;
   justify-content: right;
-  align-items: center;
-  padding: 1rem;
+  align-items: right;
+  padding: 1rem 2.5rem;
 
   ${StyledNavLink} {
     //color: orange;
+    padding:10px;
     :active {
       font-weight: 600;
     }
@@ -49,7 +50,7 @@ const GlobalStyle = createGlobalStyle`
 const LogoContainer = styled.div`
   max-height: 70%;
   margin-top: auto;
-  margin-left: 1rem;
+  margin-left: 2.5rem;
   margin-bottom: auto;
   height: 50%;
   min-height: 50%;
