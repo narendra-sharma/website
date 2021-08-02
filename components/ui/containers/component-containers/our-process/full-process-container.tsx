@@ -5,7 +5,7 @@ import { OurProcessesConfig } from '../../../../../config/our-process/our-proces
 import { BaseFlexContainer } from '../../../../_utility/utility';
 import { BACKGROUND_DEFAULT } from '../../../../../config/app-config';
 import { ConsultationContainer, ConsultationProps } from './consultation-container';
-import { DevelopementContainer, DevelopementProps } from './developement-container';
+import { AgileContainer, AgileProps } from './agile-application-container';
 import { DeployAndSupportContainer, DeployAndSupportProps } from './deployee-and-support-container';
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
@@ -21,7 +21,7 @@ export type FullProcessProps = {
 }
 type Props = {
   consultationProps: ConsultationProps,
-  developementProps: DevelopementProps,
+  developementProps: AgileProps,
   deployAndSupportProps:DeployAndSupportProps
 }
 
@@ -30,9 +30,8 @@ type SectionContainerProps = {
     backgroundColor: string;
     height: string;
 }
- // height: ${(props) => props?.height ? props?.height : "500px"};
-const SectionContainerStyled = styled.section<SectionContainerProps | any>`
- 
+
+const SectionContainerStyled = styled.section<SectionContainerProps | any>` 
   min-height: ${(props) => props?.height ? props?.height : "100px"};
   background-color: ${(props) => props?.backgroundColor ? props?.backgroundColor : BACKGROUND_DEFAULT};
   display: flex;
@@ -45,7 +44,6 @@ const HeaderText = styled.h3`
   line-height: 33px;
   letter-spacing: 0em;
   text-align: left; 
-
 `;
 function getStepContent(i:any,step:any) {
   switch (i) {
@@ -55,7 +53,7 @@ function getStepContent(i:any,step:any) {
              </SectionContainerStyled>);
     case 1:
       return (<SectionContainerStyled>
-               <DevelopementContainer {...step}/>
+               <AgileContainer {...step}/>
               </SectionContainerStyled>);
     case 2:
       return (<SectionContainerStyled style={{paddingLeft:'20px'}}>

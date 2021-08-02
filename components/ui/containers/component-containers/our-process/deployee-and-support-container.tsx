@@ -40,7 +40,7 @@ export const DeployAndSupportContainer = ({
         <BaseFlexContainer className="d-flex py-3 px-2">
           <div className="row my-3" style={{borderRadius:"15px",overflow:'hidden'}}>
           {data.map((process: any,i:any) => (
-             <div className="col-sm-4 col-12 text-center" key={i} style={{background: '#222A36',border:'2px solid #1C232E',padding:"20px 10px 20px 10px"}}>
+             <div className="col-sm-4 col-12 text-center step3Boxes" key={i} >
                 {processImage(process.image)}
                 {title(process.label)}
              </div>

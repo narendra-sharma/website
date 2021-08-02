@@ -19,7 +19,9 @@ export interface Step {
   step: string;
   label: string;
   image: string; // Or component?
-  data: StepData[]
+  data: StepData[],
+  list: any,
+  description: string,
 }
 
 export interface OurProcessProps {

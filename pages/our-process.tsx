@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import styled, {createGlobalStyle} from "styled-components";
+
+import styled from "styled-components";
 import React from "react";
 import {HeaderProcessProps, HeaderProcessSection} from '../components/ui/containers/page-sections/our-process/header-process-section';
 import {BACKGROUND_DEFAULT} from "../config/app-config";
@@ -7,11 +8,7 @@ import {BaseFlexContainer} from "../components/_utility/utility";
 import {OurProcessesConfig} from "../config/our-process/our-processes-config";
 import {FullProcessProps,FullProcessContainer} from '../components/ui/containers/component-containers/our-process/full-process-container';
 import { FooterProcessProps, FooterProcessSection } from '../components/ui/containers/page-sections/our-process/footer-process-section';
-const GlobalStyle = createGlobalStyle`
-  h1 {
-    font-size: 4rem;
-  }
-`;
+
 
 type Props = {
     headerProcessProps: HeaderProcessProps,
@@ -47,7 +44,6 @@ export const OurProcess = ({
       <SectionContainerStyled className="process_footer">
         <FooterProcessSection {...footerProcessProps}/>
       </SectionContainerStyled>
-      <GlobalStyle/>
     </BaseFlexContainer>
   )
 }

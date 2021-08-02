@@ -4,7 +4,7 @@ import ScrumBoard from "../../public/assets/process/ScrumBoard.svg"
 import {HeaderProcessProps} from "../../components/ui/containers/page-sections/our-process/header-process-section";
 import { FullProcessProps } from "../../components/ui/containers/component-containers/our-process/full-process-container";
 import { ConsultationProps } from "../../components/ui/containers/component-containers/our-process/consultation-container";
-import { DevelopementProps } from "../../components/ui/containers/component-containers/our-process/developement-container";
+import { AgileProps } from "../../components/ui/containers/component-containers/our-process/agile-application-container";
 import { DeployAndSupportProps } from "../../components/ui/containers/component-containers/our-process/deployee-and-support-container";
 import TechnicalConsultation from "../../public/assets/process/details/TechnicalConsultation.svg"
 import ApplicationRoadmap from "../../public/assets/process/details/ApplicationRoadmap.svg"
@@ -29,7 +29,7 @@ export const STEP_2_LABEL = "Agile Application Development";
 export const STEP_3_LABEL = "Deployment & Support";
 
 export const STEP_1_GRAPHIC = "";
-export const STEP_2_GRAPHIC = "";
+export const STEP_2_GRAPHIC = AgileDevelopmentLifeycle;
 export const STEP_3_GRAPHIC = "";
 
 export const TECHNICAL_LABEL = "TECHNICAL CONSULTATION";
@@ -71,20 +71,21 @@ export const STEP_1: Step = {
   step: STEP_1_STEP,
   label: STEP_1_LABEL,
   image: STEP_1_GRAPHIC,
-  data: [TECHNICAL,GATHERING,APP_ROADMAP,UI_PROTOTYPING,FIDELITY_DESIGN]
+  data: [TECHNICAL,GATHERING,APP_ROADMAP,UI_PROTOTYPING,FIDELITY_DESIGN],
+  list: [],
+  description: ""
 }
-export const STEP_2_PROCESS_LABEL = "";
-export const STEP_2_PROCESS_IMAGE = AgileDevelopmentLifeycle;
-export const STEP_2_PROCESS: StepData = {
-  label: STEP_2_PROCESS_LABEL,
-  image: STEP_2_PROCESS_IMAGE 
-}
+
+export const STEP_2_LIST = ['Real-Time Progress Updates', '24/7 Development', 'Flexibility',' Pay solely for the results', 'Transparent Pricing', 'Privacy and Security Code', 'version control','a','b','c','d','e','f','g','h','i','j'];
+export const STEP_2_DESCRIPTION = '<span>Our developers are not constrained to a 9-5 work schedule.</span><br/><br/><span class="mt-3">Our developers also are able to work completely remote and flexible hours. Development can run 24/7. This gives us access to many more developers than our competition.</span>';
 export const STEP_2: Step = {
   step: STEP_2_STEP,
   label: STEP_2_LABEL,
   image: STEP_2_GRAPHIC,
-  data:[STEP_2_PROCESS]
-}
+  data:[],
+  list: STEP_2_LIST,
+  description: STEP_2_DESCRIPTION
+ }
 export const DOCUMENT_AND_QUALITY_LABEL = "DOCUMENTATION & QUALITY ASSURANCE";
 export const SUPPORT_AND_MAINTENANCE_LABEL = "SUPPORT & MAINTENANCE";
 export const SATISFACTION_LABEL = "CUSTOMER SATISFACTION";
@@ -109,7 +110,9 @@ export const STEP_3: Step = {
   step: STEP_3_STEP,
   label: STEP_3_LABEL,
   image: STEP_3_GRAPHIC,
-  data: [DOCUMENT_AND_QUALITY,SUPPORT_AND_MAINTENANCE,SATISFACTION]
+  data: [DOCUMENT_AND_QUALITY,SUPPORT_AND_MAINTENANCE,SATISFACTION],
+  list: [],
+  description: ""
 }
 
 export const FOOTER_TITLE="This process gets Results.";
@@ -119,7 +122,7 @@ type Props = {
   headerProcessProps: HeaderProcessProps,
   fullProcessProps:FullProcessProps,
   consultationProps:ConsultationProps,
-  developementProps:DevelopementProps,
+  agileProps:AgileProps,
   deployAndSupportProps:DeployAndSupportProps,
   footerProcessProps: FooterProcessProps,
 }
@@ -135,13 +138,14 @@ export const OurProcessesConfig: Props = {
     step: STEP_1_STEP,
     label: STEP_1_LABEL,
     image: STEP_1_GRAPHIC,
-    data: [TECHNICAL,GATHERING,APP_ROADMAP,UI_PROTOTYPING,FIDELITY_DESIGN]
+    data: [TECHNICAL,GATHERING,APP_ROADMAP,UI_PROTOTYPING,FIDELITY_DESIGN],
   },
-  developementProps:{
+  agileProps:{
     step: STEP_2_STEP,
     label: STEP_2_LABEL,
     image: STEP_2_GRAPHIC,
-    data:[STEP_2_PROCESS]
+    list: STEP_2_LIST,
+    description: STEP_2_DESCRIPTION
   },
   deployAndSupportProps:{
     step: STEP_3_STEP,
@@ -153,8 +157,7 @@ export const OurProcessesConfig: Props = {
     steps: [ 
       STEP_1,
       STEP_2,
-      STEP_3,
-      
+      STEP_3,    
     ]
   }, 
   footerProcessProps: {

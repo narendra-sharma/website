@@ -1,0 +1,72 @@
+.MuiStepper-root{
+    padding: 0 24px !important;
+}
+.MuiStepLabel-iconContainer{
+    background-image: url('../../public/assets/process/details/Purple\ Expanding\ Circle.svg');
+    background-repeat: no-repeat;
+    display:block !important;
+    height: 84.08999633789062px;
+    width: 84.08999633789062px;
+    left: 51.45500183105469px;
+    top: 591px;
+    border-radius: 0px;
+}
+.MuiStepIcon-root{
+    display:none !important;
+}
+.MuiStepLabel-root{
+    width:25% !important;
+}
+.MuiStepContent-root {
+    padding-right: 21px;
+    padding-left: 0px !important;
+    margin-top: 8px !important;
+    border-left: 2px solid #805da7 !important;
+    margin-left: 40px !important;
+}    
+.MuiStepConnector-vertical{
+    margin-bottom: 8px !important;
+    border-left: 2px solid #805da7 !important;
+    overflow: hidden !important;
+} 
+.MuiStepConnector-line {
+    display: none !important;
+    border-color: none !important;
+}
+.MuiStepLabel-labelContainer,.MuiStepLabel-label.MuiStepLabel-active {
+    padding-left: 5px !important;
+    color: #C6C6C6 !important;
+}
+.MuiStepConnector-vertical {
+    padding:0 !important;
+}
+  
+@media screen and (max-width:900px){
+    .MuiStepper-root{
+        padding: 5px  24px 0px 24px !important;
+    }
+    .MuiStepLabel-root{
+        width:45% !important;
+    }
+}
+@media screen and (max-width:768px){   
+    .MuiStepLabel-root{
+        width:50% !important;
+    }
+}
+@media screen and (max-width:650px){
+    .MuiStepLabel-root{
+        width:58% !important;
+    }
+}    
+
+@media screen and (max-width:420px){
+    .MuiStepLabel-root{
+        width:90% !important;
+    }
+}
+@media screen and (max-width:360px){
+    .MuiStepLabel-root{
+        width:100% !important;
+    }
+}

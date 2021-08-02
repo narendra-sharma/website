@@ -1,0 +1,69 @@
+.developementStepImg{
+    margin-left: -2.5%;
+} 
+.learnMoreBtn{
+    background: #83DC79;
+    padding: 10px 35px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #1C232E;
+    border:1px solid #83DC79
+} 
+.list{
+    overflow-y: scroll;
+    height:340px;
+    color:#C3C3C3;
+    padding: 0px !important;
+}
+.list .MuiListItem-root.Mui-selected, .list .MuiListItem-root.Mui-selected:hover{
+    color:#ffffff !important;   
+    background: #222A36 !important;
+}
+.list::-webkit-scrollbar
+{
+	width: 5px;
+	background-color:#1C232E;
+}
+
+.list::-webkit-scrollbar-track
+{   border-radius: 5px;
+    box-shadow: inset 0 0 2px #c3c3c3c4;
+	background-color:#c3c3c3c4;
+    border-left: 2px solid #1C232E;
+    border-right: 2px solid #1C232E;
+}
+
+.list::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	box-shadow: inset 0 0 px  #83DC79 ;
+	background-color: #83DC79;
+}
+
+@media screen and (max-width:900px){
+    .developementStepImg{
+        margin-left: -3.5%;
+    }
+}
+@media screen and (max-width:740px){
+    .developementStepImg{
+        margin-left: -3%;
+    }
+}
+@media screen and (max-width:570px){
+   .developementStepImg{
+        margin-left: -2.5%;
+    }
+}
+@media screen and (max-width:420px){
+    .developementStepImg{
+        margin-left: -1.5%;
+    }
+}
+@media screen and (max-width:320px){
+    .developementStepImg{
+        margin-left: -0.5%;
+    }
+}

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import {BaseFlexContainer} from "../../../../_utility/utility";
-
 export type FooterProcessProps = {
   title:string,
   description:string
@@ -28,10 +27,10 @@ export const FooterProcessSection = ({
                             }: FooterProcessProps) => {
     return (
         <BaseFlexContainer className="text-center py-3 px-1" style={{borderLeft: '2px solid #805da7'}}>
-            <FooterText>
+            <FooterText className="footerTitle">
                 {title}
             </FooterText>
-            <FooterDescription className="footerDescription pt-3">
+            <FooterDescription className="footerDescription py-3">
                 {description}
             </FooterDescription>
         </BaseFlexContainer>

@@ -1,0 +1,42 @@
+.process_footer{
+    padding-left:64px;
+}
+.footerDescription{
+  margin:0 24rem;
+}
+@media screen and (max-width:1024px){   
+    .footerDescription{
+        margin:0 16rem;
+    }
+}    
+@media screen and (max-width:900px){
+    .footerDescription{
+        margin:0 9.5rem;
+    }
+}
+@media screen and (max-width:768px){
+    .footerDescription{
+        margin:0 6.5rem;
+    } 
+}
+
+@media screen and (max-width:675px){ 
+    .footerDescription{
+        margin:0 4.5rem;
+    } 
+}
+@media screen and (max-width:650px){
+    .footerDescription{
+        margin:0 3.5rem;
+    }
+}    
+@media screen and (max-width:570px){
+    .footerDescription{
+        margin:0 1.5rem;
+    }
+}
+@media screen and (max-width:420px){
+    .footerDescription{
+        margin:0 20px;
+    }
+}

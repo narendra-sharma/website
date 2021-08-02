@@ -1,0 +1,20 @@
+.step3Boxes{
+    background: #222A36;
+    border:2px solid #1C232E;
+    padding:20px 78px !important;
+}
+@media  screen and (max-width:1366px) {
+    .step3Boxes{
+        padding:20px 90px !important;
+    } 
+}
+@media screen and (max-width:1024px){
+    .step3Boxes{
+        padding:20px 52px !important;
+    } 
+}    
+@media screen and (max-width:900px){
+    .step3Boxes{
+        padding:18px !important;
+    }
+}
